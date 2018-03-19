@@ -1,0 +1,3 @@
+[submodule "stage2/05-cust-gen-tweaks/files/dot"]
+	path = stage2/05-cust-gen-tweaks/files/dot
+	url = git@git.mobilep.ro:cezar/dot.git

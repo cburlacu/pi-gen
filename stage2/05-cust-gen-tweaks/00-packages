@@ -1,0 +1,6 @@
+htop 
+vcsh
+tmux sshfs socat
+arp-scan nmap lshw
+python3-pip
+stress whois tcpdump
