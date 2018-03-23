@@ -1,0 +1,5 @@
+git
+virtualenv python3-dev libxml2-dev libxslt1-dev 
+autossh telnet
+vim
+glances sysbench

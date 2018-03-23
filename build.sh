@@ -1,5 +1,6 @@
 #!/bin/bash -e
 # shellcheck disable=SC2119,SC1091
+# set +x
 run_sub_stage()
 {
 	log "Begin ${SUB_STAGE_DIR}"
@@ -108,11 +109,11 @@ run_stage(){
 				run_sub_stage
 			fi
 		done
+	    PREV_ROOTFS_DIR="${ROOTFS_DIR}"
 	fi
 	unmount "${WORK_DIR}/${STAGE}"
 	PREV_STAGE="${STAGE}"
 	PREV_STAGE_DIR="${STAGE_DIR}"
-	PREV_ROOTFS_DIR="${ROOTFS_DIR}"
 	popd > /dev/null
 	log "End ${STAGE_DIR}"
 }
